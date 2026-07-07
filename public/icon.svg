@@ -1,0 +1,48 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="128" fill="url(#grad1)"/>
+  
+  <!-- Brain Icon -->
+  <g transform="translate(128, 128)">
+    <!-- Left hemisphere -->
+    <path d="M 80 50 Q 40 50 30 90 Q 25 130 40 160 Q 50 180 70 185" 
+          stroke="white" stroke-width="16" fill="none" stroke-linecap="round"/>
+    <path d="M 70 185 Q 90 190 100 170 Q 110 150 105 130" 
+          stroke="white" stroke-width="16" fill="none" stroke-linecap="round"/>
+    
+    <!-- Right hemisphere -->
+    <path d="M 180 50 Q 220 50 230 90 Q 235 130 220 160 Q 210 180 190 185" 
+          stroke="white" stroke-width="16" fill="none" stroke-linecap="round"/>
+    <path d="M 190 185 Q 170 190 160 170 Q 150 150 155 130" 
+          stroke="white" stroke-width="16" fill="none" stroke-linecap="round"/>
+    
+    <!-- Connection -->
+    <path d="M 105 130 Q 130 125 155 130" 
+          stroke="white" stroke-width="12" fill="none" stroke-linecap="round"/>
+    
+    <!-- Neural connections -->
+    <circle cx="60" cy="100" r="8" fill="white" opacity="0.8"/>
+    <circle cx="80" cy="140" r="8" fill="white" opacity="0.8"/>
+    <circle cx="120" cy="110" r="8" fill="white" opacity="0.8"/>
+    <circle cx="140" cy="150" r="8" fill="white" opacity="0.8"/>
+    <circle cx="180" cy="110" r="8" fill="white" opacity="0.8"/>
+    <circle cx="200" cy="140" r="8" fill="white" opacity="0.8"/>
+    
+    <!-- Circuit lines -->
+    <line x1="60" y1="100" x2="80" y2="140" stroke="white" stroke-width="3" opacity="0.5"/>
+    <line x1="80" y1="140" x2="120" y2="110" stroke="white" stroke-width="3" opacity="0.5"/>
+    <line x1="120" y1="110" x2="140" y2="150" stroke="white" stroke-width="3" opacity="0.5"/>
+    <line x1="140" y1="150" x2="180" y2="110" stroke="white" stroke-width="3" opacity="0.5"/>
+    <line x1="180" y1="110" x2="200" y2="140" stroke="white" stroke-width="3" opacity="0.5"/>
+  </g>
+  
+  <!-- AI Text -->
+  <text x="256" y="380" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="white" text-anchor="middle">AI</text>
+</svg>

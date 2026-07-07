@@ -1,0 +1,4 @@
+# SPA用のフォールバック
+/* /index.html 200
+
+# HTTPSへのリダイレクト（Cloudflare側で自動処理）

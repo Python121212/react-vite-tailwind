@@ -1,0 +1,65 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=*, microphone=*, geolocation=*, interest-cohort=()
+
+# Service Worker
+/sw.js
+  Content-Type: application/javascript; charset=utf-8
+  Cache-Control: no-cache, no-store, must-revalidate
+  Service-Worker-Allowed: /
+
+# Workbox
+/workbox-*.js
+  Content-Type: application/javascript; charset=utf-8
+  Cache-Control: public, max-age=31536000, immutable
+
+# WebAssembly (CORS + バイナリ)
+/*.wasm
+  Content-Type: application/wasm
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Opener-Policy: same-origin
+  Cache-Control: public, max-age=31536000, immutable
+
+# WebGPU/WebLLM用のCORS設定
+/*
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: cross-origin
+
+# マニフェスト
+/manifest.json
+/manifest.webmanifest
+  Content-Type: application/manifest+json
+  Cache-Control: public, max-age=604800
+
+# アイコン・画像
+/*.png
+/*.jpg
+/*.jpeg
+/*.svg
+/*.ico
+  Cache-Control: public, max-age=31536000, immutable
+
+# フォント
+/*.woff
+/*.woff2
+/*.ttf
+/*.otf
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# HTML
+/*.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# CSS・JavaScript
+/*.css
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+# その他のアセット
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
