@@ -10,5 +10,4 @@ cwd = "./"
 [build.upload]
 format = "service-worker"
 
-[[pages_build_output_dir]]
-value = "dist"
+pages_build_output_dir = "dist"
